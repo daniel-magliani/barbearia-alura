@@ -1,0 +1,142 @@
+body{
+	font-family: 'Roboto Slab', sans-serif;
+}
+
+header{
+	background: lightgray;
+}
+
+strong{
+	font-weight: bold;
+}
+
+em{
+	font-style: italic;
+}
+
+.menu{
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.menu-lista{
+	position: absolute;
+	top: 120px;
+	right: 0px;
+}
+
+.menu-lista li{
+	display: inline-block;
+	margin-right: 0.8em;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.menu-lista a{
+	font-family: 'Monofett', cursive;
+	text-decoration: none;
+	color: black;
+	font-size: 2.2em;
+}
+
+.menu-lista a:hover{
+	color: orangered;
+
+}
+
+.banner{
+	width: 100%;
+}
+
+.principal{
+	background: #FEFEFE;
+	padding: 3em 0;
+}
+
+.principal-titulo{
+	font-size: 2em;
+	padding-bottom: 1em;
+	text-align: center;
+	clear: left;
+}
+
+.principal-conteudo{	
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal-conteudo p{
+	margin: 0 0 1em;
+}
+
+.utensilios{
+	width: 120px;
+	float: left;
+	padding: 0 1em 1em 0; 
+}
+
+.mapa{
+	background: linear-gradient(#FEFEFE, #888888);
+	padding: 3em 0;
+}
+
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa-conteudo p{
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.beneficios{
+	background: #888888;
+	padding: 3em 0;
+}
+
+.beneficios-conteudo{
+	width: 640px;
+	margin: 0 auto;
+
+}
+
+.beneficios-lista{
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+}
+
+.beneficios-lista li{
+	line-height: 2;
+	
+	font-style: italic;
+}
+
+.beneficios-lista li:before{
+	content: "⭐ ";
+}
+
+.beneficios-imagem{
+	width: 60%;
+}
+
+
+footer{
+	background: url("imagens\\bg.jpg");
+	padding: 3em 0;
+}
+
+footer img{
+	display: block;
+	margin: 0 auto;
+}
+
+.copyright{
+	text-align: center;
+	color: white;
+	font-size: 0.8em;
+	padding-bottom: 1.5em;
+}
