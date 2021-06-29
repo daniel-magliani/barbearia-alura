@@ -43,7 +43,6 @@ em{
 
 .menu-lista a:hover{
 	color: orangered;
-
 }
 
 .banner{
@@ -139,4 +138,156 @@ footer img{
 	color: white;
 	font-size: 0.8em;
 	padding-bottom: 1.5em;
+}
+
+/*Estilo da página produtos*/
+.produtos{	
+	padding: 3em;	 
+	width: 940px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.produtos img{
+	width: 100%;
+}
+
+.produtos li{
+	text-align: center;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 0 1.5%;
+	box-shadow: 5px 5px 10px black;
+	width: 30%;	
+	box-sizing: border-box;
+	padding: 5px;
+	vertical-align: top;
+	transition: 500ms;
+}
+
+.produtos li:hover{
+	border-color: teal;
+	box-shadow: 5px 5px 15px teal;
+}
+
+.produtos li:hover h2{
+	font-size: 2.1em;
+
+}
+
+.produtos h2{
+	margin-top: 0.6em;
+	font-size: 2em;	
+	font-weight: bold;
+}
+
+.produtos p{
+	margin: 1em 0;
+}
+
+.produtos p + p{
+	font-weight: bold;
+	margin-top: 1em;
+	font-size: 1.5em;
+}
+
+/*Estilo da página contatos*/
+.conteudo-contato{
+	width: 940px;
+	margin: 50px auto;
+}
+
+.contato input::placeholder, textarea::placeholder{
+	font-family: 'Roboto Slab', sans-serif;
+}
+
+.dados-contato input,textarea{
+	display: block;
+	width: 50%;
+	margin: 1em 0;
+	line-height: 2;
+	font-size: 1.2em;
+	padding-left: 0.8em;
+}
+
+.forma-contato{
+	margin: 1.5em 0;
+}
+
+.forma-contato label,legend{
+	margin-bottom: 10px;
+	display: block;
+}
+
+.horario-preferencia select{
+	display: block;
+	font-family: inherit;
+	font-size: 1em;
+	width: 52%;
+	padding: 1em;
+	background-color: transparent;
+	border: 1px solid gray;
+	border-radius: 0.25em;
+}
+ 
+.novidades{
+	margin: 2em 0;
+	display: block;
+}
+
+.botao-enviar-formulario{
+	width: 50%;
+	display: block;
+	padding: 10px 5px;
+	margin: 2em 0;
+	font-size: bold;
+	background: orangered;
+	color: white;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	opacity: 0.8;
+	transition: 500ms all;
+}
+
+.botao-enviar-formulario:hover{
+	opacity: 1;
+	transform: scale(1.1);
+}
+
+.horarios{
+	border-collapse: collapse;
+	min-width: 50%;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	margin-top: 4em;
+}
+
+.horarios thead tr{
+	font-weight: bold;
+	background: teal;
+	color: white;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.horarios th,td{
+	padding: 0.6em 0.8em;
+}
+
+.horarios tbody tr{
+	border-bottom: thin solid #dddddd;
+}
+
+.horarios tbody tr:nth-of-type(even){
+	background: #f3f3f3;
+}
+
+.horarios tbody tr: last-of-type{
+	border-bottom: 2px solid #009879;
+}
+
+.horarios tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
 }
