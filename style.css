@@ -99,18 +99,17 @@ em{
 .beneficios-conteudo{
 	width: 640px;
 	margin: 0 auto;
-
 }
 
 .beneficios-lista{
 	display: inline-block;
 	vertical-align: top;
 	width: 40%;
+	margin-top: 1em;
 }
 
 .beneficios-lista li{
-	line-height: 2;
-	
+	line-height: 2;	
 	font-style: italic;
 }
 
@@ -120,8 +119,15 @@ em{
 
 .beneficios-imagem{
 	width: 60%;
+	transition: 400ms;
+	box-shadow: 0 0 20px black;
+	margin: 1em 0 1em 0;
 }
 
+.video{
+ 	margin: 2em auto;
+ 	width: 560px;
+}
 
 footer{
 	background: url("imagens\\bg.jpg");
@@ -241,7 +247,8 @@ footer img{
 	display: block;
 	padding: 10px 5px;
 	margin: 2em 0;
-	font-size: bold;
+	font-weight: bold;
+	font-size: 1.1em;
 	background: orangered;
 	color: white;
 	cursor: pointer;
@@ -261,6 +268,8 @@ footer img{
 	min-width: 50%;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 	margin-top: 4em;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
 }
 
 .horarios thead tr{
@@ -283,11 +292,60 @@ footer img{
 	background: #f3f3f3;
 }
 
-.horarios tbody tr: last-of-type{
-	border-bottom: 2px solid #009879;
+.horarios tbody tr:last-of-type{
+	//border-bottom: 1px solid #009879;
 }
 
 .horarios tbody tr.active-row {
     font-weight: bold;
     color: #009879;
+} 
+
+/*Desing para telas menores*/
+@media screen and (max-width: 480px){
+	.menu, .principal-conteudo, .mapa-conteudo, .beneficios-conteudo, .video{
+		width: auto;
+		margin: 0 1em;
+	}
+	.menu-lista{
+		position: static;
+		text-align: center;
+	}
+	.menu-lista a{
+		font-size: 1.4em;
+	}
+	h1{
+		text-align: center;
+	}
+	.principal-conteudo > p{
+		text-align: justify;
+	}
+	.beneficios-lista, .beneficios-imagem{
+		width: 100%;
+	}
+	.produtos, .produtos li{
+		width: auto;		
+	}
+	.produtos li{
+		margin-bottom: 2em;
+	}
+	.produtos li img{
+		width: 80%;
+	}
+	.conteudo-contato{
+		width: auto;
+		margin: 0 1.5em;
+	}
+	.dados-contato input,textarea{
+		width: auto;
+	}
+	.horario-preferencia select{
+		width: 100%;
+	}
+	.botao-enviar-formulario{
+		margin: 0 auto;
+	}
+	.horarios{ 
+		margin: 4em auto;
+	} 
 }
