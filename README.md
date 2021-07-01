@@ -1,5 +1,5 @@
 # Barbearia Alura
-💈HTML5 e CSS3 - Página Barbearia Alura
+💈HTML5 e CSS3 - Barbearia Alura
 
 ---
 
